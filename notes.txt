@@ -9,3 +9,23 @@ This gives you the feel that you maintain hierarchy in your code starting from A
 Other than that, you can have the App logic in the index.js file itself. 
 But it's something related to conventions followed by the community using the library or framework. 
 It always feels good to go along the community.
+
+For using styled-components
+---------------------------
+npm i styled-components 
+OR 
+yarn add styled-components
+Then you can use styled components easily.
+
+Why use styled components?
+=========================
+1. Its easier to understand and reduces a lot div and classNames making code a lot simpler.
+
+2. Also if we use a component(parent) className that is say "container" and it is fetching a another child component which uses 
+a div and also has className as "container" then the react-app will show an error. This can cause development errors.
+And to prevent this, react will take the styling of the parent component over the child component.
+
+3. When we are using in small applications make a className and doing CSS on it is ok. But for large and complex applications,
+its better to use Styled-components.
+
+To prevent all this we can use Styled-components.

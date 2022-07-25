@@ -1,13 +1,11 @@
 import React from 'react'
-
-//We are creating our own style components
-const Container = 
+import Navbar from '../components/Navbar';
 
 console.log("Hello World");
 const Home = () => {
   return (
     <div>
-        
+        <Navbar />
     </div>
   )
 }
