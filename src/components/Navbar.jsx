@@ -9,12 +9,19 @@ const Container = styled.div`
 const Wrapper = styled.div`
   padding: 10px 20px
 `
+
+const Left = styled.div``
+const Center = styled.div``
+const Right = styled.div``
+
 const Navbar = () => {
   return (
     <Container>
         <Wrapper>
           {/* Adds space from top and bottom */}
-            navbar
+            <Left> Left </Left>
+            <Right> Right </Right>
+            <Center> Center </Center>
         </Wrapper>
     </Container>
   )
