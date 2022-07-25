@@ -14,16 +14,25 @@ const Wrapper = styled.div`
   justify-content: space-between;
 `;
 
-const Left = styled.div``;
-const Center = styled.div``;
-const Right = styled.div``;
+// Left , Right and Center have each been divided equally in the Wrapper Component
+const Left = styled.div`
+  flex = 1;
+`;
+const Center = styled.div`
+  flex = 1;
+`;
+const Right = styled.div`
+  flex = 1;
+`;
 
 const Navbar = () => {
   return (
     <Container>
             {/* Wrapper component is used to Wrap the navbar components like login , register etc. */}
         <Wrapper>
-            <Left> Left </Left>
+            <Left> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Quos, distinctio fugiat. Expedita, praesentium optio, dicta veniam voluptas quod vitae voluptatem ipsum repellat cupiditate soluta 
+              repellendus corporis est, illo error laboriosam. </Left>
             <Center> Center </Center>
             <Right> Right </Right>
         </Wrapper>
