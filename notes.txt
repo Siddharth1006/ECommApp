@@ -10,6 +10,12 @@ Other than that, you can have the App logic in the index.js file itself.
 But it's something related to conventions followed by the community using the library or framework. 
 It always feels good to go along the community.
 
+Js vs jsx?
+=========
+JS is simply a scripting language, adding functionality into your website. 
+JSX is an addition to the JavaScript syntax which is a mixture of both HTML and JavaScript. 
+Both JS and JSX are interchangeable but JSX makes the code easier to understand for users.
+
 For using styled-components
 ---------------------------
 npm i styled-components 

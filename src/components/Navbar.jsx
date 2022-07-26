@@ -6,7 +6,8 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 //We are creating our own style components and WILL NOT BE USING CSS
 const Container = styled.div`
-  height: 65px;
+  height: 85px;
+  // Change this value to see the Container component's thickness vary
 `;
 
 const Wrapper = styled.div`
@@ -53,7 +54,7 @@ const Center = styled.div`
 
 const Logo = styled.h1`
   font-weight: bold;
-  font-style: 24px;
+  /* font-size: 33px; */
 `;
 
 //===============================================
@@ -66,8 +67,10 @@ const Right = styled.div`
 `;
 
 const MenuItem = styled.div`
-  font-style: 14px;
+  font-size: 19px;
   cursor: pointer;
+  /* For the spacing between the different menu ITEMS */
+  margin-left: 25px;
 `;
 
 const Navbar = () => {
@@ -80,16 +83,17 @@ const Navbar = () => {
               
               <SearchContainer> 
                 <Input />
-                <SearchIcon />
+                {/* To customize the search icon in the search bar */}
+                <SearchIcon style={{color:"gray" , fontSize:23}}/>
               </SearchContainer> 
             </Left>
 
             <Center>  
-              <Logo> AVIATO. </Logo>
+              <Logo> AVIATO </Logo>
             </Center>
             
             <Right> 
-                <MenuItem> REGISTER/</MenuItem> 
+                <MenuItem> REGISTER</MenuItem> 
                 <MenuItem> SIGN IN </MenuItem> 
                 <MenuItem> 
                   <Badge badgeContent={4} color="primary">
@@ -97,7 +101,7 @@ const Navbar = () => {
                   </Badge>
                 </MenuItem> 
             </Right>
-            
+
         </Wrapper>
     </Container>
   )
