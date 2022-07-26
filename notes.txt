@@ -29,3 +29,6 @@ And to prevent this, react will take the styling of the parent component over th
 its better to use Styled-components.
 
 To prevent all this we can use Styled-components.
+
+https://styled-components.com/docs/tooling#babel-plugin
+Babel Plugin : npm install --save-dev babel-plugin-styled-components

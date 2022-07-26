@@ -18,6 +18,12 @@ const Wrapper = styled.div`
 const Left = styled.div`
   flex = 1;
 `;
+
+const Language = styled.span`
+  font-size: 14px;
+  cursor: pointer;
+`;
+
 const Center = styled.div`
   flex = 1;
 `;
