@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
 import SearchIcon from '@mui/icons-material/Search';
+import Badge from '@mui/material/Badge';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 //We are creating our own style components and WILL NOT BE USING CSS
 const Container = styled.div`
@@ -8,10 +10,11 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  padding: 10px 20px;
+  padding: 8px 20px;
 
   /*Using Flex box here to make the Wrapper contents horizontal*/
   display: flex;
+  align-items: center;
   justify-content: space-between;
 `;
 
@@ -30,14 +33,41 @@ const Language = styled.span`
 const SearchContainer = styled.div`
   border: 1px solid lightgray;
   display: flex;
+  
   align-items: center; // aligns the search container to the center
+  
+  margin-left: 20px;
+  padding: 5px;
 `;
+
+const Input = styled.input`
+  border: none;
+`;
+
+//=============================================
 
 const Center = styled.div`
   flex: 1;
+  text-align: center;
 `;
+
+const Logo = styled.h1`
+  font-weight: bold;
+  font-style: 24px;
+`;
+
+//===============================================
+
 const Right = styled.div`
   flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+`;
+
+const MenuItem = styled.div`
+  font-style: 14px;
+  cursor: pointer;
 `;
 
 const Navbar = () => {
@@ -49,14 +79,25 @@ const Navbar = () => {
               <Language> EN </Language> 
               
               <SearchContainer> 
-                {/* input= we are using material UI for ICONS */}
+                <Input />
                 <SearchIcon />
               </SearchContainer> 
             </Left>
 
-            <Center> Center </Center>
+            <Center>  
+              <Logo> AVIATO. </Logo>
+            </Center>
             
-            <Right> Right </Right>
+            <Right> 
+                <MenuItem> REGISTER/</MenuItem> 
+                <MenuItem> SIGN IN </MenuItem> 
+                <MenuItem> 
+                  <Badge badgeContent={4} color="primary">
+                    <ShoppingCartOutlinedIcon />
+                  </Badge>
+                </MenuItem> 
+            </Right>
+            
         </Wrapper>
     </Container>
   )
