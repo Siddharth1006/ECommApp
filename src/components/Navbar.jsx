@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import SearchIcon from '@mui/icons-material/Search';
 
 //We are creating our own style components and WILL NOT BE USING CSS
 const Container = styled.div`
@@ -16,7 +17,9 @@ const Wrapper = styled.div`
 
 // Left , Right and Center have each been divided equally in the Wrapper Component
 const Left = styled.div`
-  flex = 1;
+  flex: 1;
+  display: flex; //to make horizontal
+  align-items: center;
 `;
 
 const Language = styled.span`
@@ -24,11 +27,17 @@ const Language = styled.span`
   cursor: pointer;
 `;
 
+const SearchContainer = styled.div`
+  border: 1px solid lightgray;
+  display: flex;
+  align-items: center; // aligns the search container to the center
+`;
+
 const Center = styled.div`
-  flex = 1;
+  flex: 1;
 `;
 const Right = styled.div`
-  flex = 1;
+  flex: 1;
 `;
 
 const Navbar = () => {
@@ -36,10 +45,17 @@ const Navbar = () => {
     <Container>
             {/* Wrapper component is used to Wrap the navbar components like login , register etc. */}
         <Wrapper>
-            <Left> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Quos, distinctio fugiat. Expedita, praesentium optio, dicta veniam voluptas quod vitae voluptatem ipsum repellat cupiditate soluta 
-              repellendus corporis est, illo error laboriosam. </Left>
+            <Left> 
+              <Language> EN </Language> 
+              
+              <SearchContainer> 
+                {/* input= we are using material UI for ICONS */}
+                <SearchIcon />
+              </SearchContainer> 
+            </Left>
+
             <Center> Center </Center>
+            
             <Right> Right </Right>
         </Wrapper>
     </Container>

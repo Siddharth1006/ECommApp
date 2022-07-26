@@ -31,4 +31,10 @@ its better to use Styled-components.
 To prevent all this we can use Styled-components.
 
 https://styled-components.com/docs/tooling#babel-plugin
-Babel Plugin : npm install --save-dev babel-plugin-styled-components
+Babel Plugin : $ npm install --save-dev babel-plugin-styled-components
+
+
+Material UI DOCUMENTATION : https://mui.com/material-ui/getting-started/installation/ 
+--------------------------
+FOR Material UI -> we are using it for the ICONS 
+$ npm install @mui/icons-material
