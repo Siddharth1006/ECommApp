@@ -4,10 +4,9 @@ import { popularProducts } from '../data';
 import EachProduct from './EachProduct';
 
 const Container = styled.div`
-    display: flex;
     padding: 20px;
+    display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-between;
 `;
 
@@ -18,7 +17,7 @@ const Products = () => {
                 <EachProduct item={item} key={item.id} />
             ))}
         </Container>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;

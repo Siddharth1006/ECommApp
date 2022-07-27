@@ -85,7 +85,7 @@ export const sliderItems = [
     },
     {
       id:7,
-      img:"https://5.imimg.com/data5/BV/UY/ZP/SELLER-59756470/mens-cotton-jacket-500x500.jpg",
+      img:"/photos/mens-cotton-jacket-500x500-removebg-preview.png",
     },
     {
       id:8,
@@ -93,10 +93,10 @@ export const sliderItems = [
     },
     {
       id:9,
-      img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfJFVOxZO43MxBF2j5APgvb9kHbJ243kTu0A&usqp=CAU"
+      img:"/photos/images-removebg-preview.png"
     },
     {
       id:10,
-      img:"https://4.imimg.com/data4/HO/XM/MY-25191941/boot-shoes--500x500.jpg"
+      img:"/photos/boot-shoes--500x500-removebg-preview.png"
     }
   ];

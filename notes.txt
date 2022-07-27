@@ -49,3 +49,7 @@ Usedstake hook
 ==============
 https://reactjs.org/docs/hooks-state.html 
 used for slide index which will slide the background when we click the slider.
+
+How to remove background from an image? USE THIS WEBISTE!!
+========================================================
+https://www.remove.bg/ 

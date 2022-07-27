@@ -7,11 +7,21 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 const Container = styled.div`
     flex: 1;
     margin: 5px;
-    min-width: 340px;
+    min-width: 320px;
     height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5fbfd;
 `;
 
 const Circle = styled.div`
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
 `;
 
 const Image = styled.img`
