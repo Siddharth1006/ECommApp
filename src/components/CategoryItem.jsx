@@ -3,10 +3,13 @@ import styled  from "styled-components"
 const Container = styled.div`
     //gives all images same block of size
     flex: 1;
+    margin: 3px;
+    height: 70vh;
 `;
 
 const Image = styled.img`
     width: 100%;
+    height: 100%;
 `;
 const Info = styled.div``;
 const Title = styled.h1``;
