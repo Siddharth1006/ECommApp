@@ -57,9 +57,9 @@ const Arrow = styled.div`
 const Wrapper = styled.div`
     height: 100%;
     display: flex;
-    
+
     //causes a more smoother motion of sliding !!!
-    transition: all 1.5s ease
+    transition: all 1.5s ease;
     //as you decrease by -100vw we shift to the right side of the flex giving 
     //us a new image. WE are using this concept and multiplying the constant 1 , 2 etc to -100vw to give
     // different images as the slider is clicked.
@@ -132,7 +132,7 @@ const Slider = () => {
     const [slideIndex , setSlideIndex] = useState(0);
 
     const handleClick = (direction) => {
-        if(direction == "left"){
+        if(direction === "left"){
             setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
         }
         else {
