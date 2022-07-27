@@ -38,6 +38,11 @@ const Info = styled.div`
     position: absolute;
     background-color: gray;
     z-index: 3;
+
+    //To bring icons to center and display horizontally
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;
 
 const Icon = styled.div``;
