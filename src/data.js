@@ -85,10 +85,18 @@ export const sliderItems = [
     },
     {
       id:7,
-      img:"https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+      img:"https://5.imimg.com/data5/BV/UY/ZP/SELLER-59756470/mens-cotton-jacket-500x500.jpg",
     },
     {
       id:8,
       img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
     },
+    {
+      id:9,
+      img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfJFVOxZO43MxBF2j5APgvb9kHbJ243kTu0A&usqp=CAU"
+    },
+    {
+      id:10,
+      img:"https://4.imimg.com/data4/HO/XM/MY-25191941/boot-shoes--500x500.jpg"
+    }
   ];
