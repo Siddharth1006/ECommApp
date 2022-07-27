@@ -65,7 +65,7 @@ export const sliderItems = [
     },
     {
       id:2,
-      img:"https://cdn.shopify.com/s/files/1/0101/4832/products/Angela_Natural_Tee.png?v=1606780388",
+      img:"https://img.joomcdn.net/05fe9b36f12a9af1fdaaf54a72e1953cb2c50ae1_1024_1024.jpeg",
     },
     {
       id:3,
