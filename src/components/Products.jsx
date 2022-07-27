@@ -3,7 +3,10 @@ import styled from 'styled-components'
 import { popularProducts } from '../data';
 import EachProduct from './EachProduct';
 
-const Container = styled.div``;
+const Container = styled.div`
+    display: flex;
+    padding: 20px;
+`;
 
 const Products = () => {
   return (
