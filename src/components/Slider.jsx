@@ -38,7 +38,7 @@ const Arrow = styled.div`
     }
 
     //scales the Icon size
-    transform: scale(1.8);
+    transform: scale(1.2);
 
     //Center vertically
     top: 0;
@@ -81,7 +81,9 @@ const ImageContainer = styled.div`
 
 //Remember its a styled.img not .div
 const Image = styled.img`
-    margin-left: 130px;
+    height: 900px;
+    /* width: 850px; */
+    margin-left: 90px;
 `;
 
 const InfoContainer = styled.div`
@@ -91,7 +93,7 @@ const InfoContainer = styled.div`
 
 //Make a note of the tags being used. 
 const Title = styled.h1`
-    font-size: 50px;
+    font-size: 80px;
     animation: fadeIn 2s infinite;
     @keyframes fadeIn {
         70% { opacity: 0; }
