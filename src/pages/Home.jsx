@@ -4,8 +4,8 @@ import Navbar from '../components/Navbar';
 import Slider from '../components/Slider';
 import Categories from '../components/Categories'
 import Products from '../components/Products';
+import Newsletter from '../components/Newsletter';
 
-console.log("Hello World");
 const Home = () => {
   return (
     <div>
@@ -14,6 +14,7 @@ const Home = () => {
         <Slider />
         <Categories />
         <Products />
+        <Newsletter />
     </div>
   )
 }
