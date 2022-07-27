@@ -38,7 +38,7 @@ const Info = styled.div`
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: gray;
+    background-color: rgb(0 , 0 , 0 , 0.2);
     z-index: 3;
 
     //To bring icons to center and display horizontally
