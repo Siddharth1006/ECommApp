@@ -56,6 +56,18 @@ const Icon = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px;
+
+    //Animation
+    transition: all 0.5s ease;
+
+    //To change the color of the icon when we bring the cursor on it.
+    &:hover {
+        background-color: #e9f5f5;
+        transform: scale(1.2);
+    }
+
+    cursor: pointer;
 `;
 
 //item is the prop
