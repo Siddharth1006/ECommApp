@@ -4,6 +4,28 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import SearchIcon from '@mui/icons-material/Search';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 
+//This is for the search icon , favourites icon and Shopping cat icon
+const Info = styled.div`
+    //the icons will show only when we bring the cursor on the productItems. 
+    //For that we use "opacity" and "hover" animation
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgb(0 , 0 , 0 , 0.2);
+    z-index: 3;
+
+    //To bring icons to center and display horizontally
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //Animation
+    transition: all 0.5s ease;
+    cursor: pointer;
+`;
+
 const Container = styled.div`
     flex: 1;
     margin: 5px;
@@ -16,6 +38,16 @@ const Container = styled.div`
     background-color: #f5fbfd;
 
     position: relative;
+
+    //writing just hover makes the hover affect ONLY on the container
+    //To affect all elements of Info when cursor is brought, its really easy
+    //in STYLED components. Write info next to hover.
+
+    //NOTE: if we are using a styled component, then it MUST BE defined earlier. HEnce
+    // we are copying code above contaienr compoenent so that we can use it here.
+    &:hover ${Info} {
+        opacity: 1;
+    };
 `;
 
 const Circle = styled.div`
@@ -29,22 +61,6 @@ const Circle = styled.div`
 const Image = styled.img`
      height: 85%;
      z-index: 2;
-`;
-
-
-
-//This is for the search icon , favourites icon and Shopping cat icon
-const Info = styled.div`
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: rgb(0 , 0 , 0 , 0.2);
-    z-index: 3;
-
-    //To bring icons to center and display horizontally
-    display: flex;
-    align-items: center;
-    justify-content: center;
 `;
 
 const Icon = styled.div`
@@ -92,7 +108,7 @@ const EachProduct = ({item}) => {
                 </Icon>
             </Info>
         </Container>
-  )
-}
+  );
+};
 
-export default EachProduct
+export default EachProduct;

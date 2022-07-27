@@ -85,7 +85,7 @@ export const sliderItems = [
     },
     {
       id:7,
-      img:"/photos/mens-cotton-jacket-500x500-removebg-preview.png",
+      img:"/photos/mens-jackets-500x500-removebg-preview.png",
     },
     {
       id:8,
@@ -93,7 +93,7 @@ export const sliderItems = [
     },
     {
       id:9,
-      img:"/photos/images-removebg-preview.png"
+      img:"/photos/moss-copenhagen-nia-scarf_1190x1488c-removebg-preview.png"
     },
     {
       id:10,
