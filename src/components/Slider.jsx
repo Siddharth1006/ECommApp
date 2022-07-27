@@ -148,7 +148,6 @@ const Slider = () => {
                 <Slide bg={item.bg}>
                     <ImageContainer>
                         <Image src={item.img} />
-                        {/* <Image src="https://images.pexels.com/photos/709803/pexels-photo-709803.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /> */}
                     </ImageContainer>
                     
                     <InfoContainer>
