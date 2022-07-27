@@ -12,6 +12,7 @@ const Container = styled.div`
     display: flex;
 
     position: relative;
+    overflow: hidden;
 `;
 
 
@@ -19,7 +20,7 @@ const Container = styled.div`
 const Arrow = styled.div`
     width: 50px;
     height: 50px;
-    background-color: #fff7f7;
+    background-color: #fcfcfc;
     //circle around the arrow
     border-radius: 50%;
 
@@ -28,6 +29,14 @@ const Arrow = styled.div`
     justify-content: center;
 
     position: absolute;
+    :hover {
+        background-color: #c1c3c7;
+        transition: 0.2s;
+    }
+
+    //scales the Icon size
+    transform: scale(1.8);
+
     //Center vertically
     top: 0;
     bottom: 0;
@@ -37,7 +46,7 @@ const Arrow = styled.div`
     margin: auto;
 
     opacity: 0.5; // makes the arrow a little transparent.
-
+    z-index: 2;
     cursor: pointer;
 `;
 
@@ -45,6 +54,8 @@ const Arrow = styled.div`
 const Wrapper = styled.div`
     height: 100%;
     display: flex;
+
+    /* transform: translateX(-100vw); */
 `;
 
 const Slide = styled.div`
@@ -52,6 +63,10 @@ const Slide = styled.div`
     height: 100vh;
     display: flex;
     align-items: center;
+
+    //background-color will change automatically as when we click the slider 
+    //and new Images shows
+    background-color: #${props => props.bg};
 `;
 
 const ImageContainer = styled.div`
@@ -60,8 +75,7 @@ const ImageContainer = styled.div`
 
 //Remember its a styled.img not .div
 const Image = styled.img`
-    height: 80%;
-      
+    margin-left: 130px;
 `;
 
 const InfoContainer = styled.div`
@@ -81,7 +95,7 @@ const Title = styled.h1`
 
 const Description = styled.p`
     margin: 50px 0px;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 500;
     letter-spacing: 1px;
     font-family: 'Helvetica neue' , 'Helvetica' , 'Arial' , 'sans-serif';
@@ -104,17 +118,24 @@ const Button = styled.button`
 //===================================
 
 const Slider = () => {
+    // React hook for the slide Arrays which will have the 3 images in the Slider
+    const [slideIndex , setSlideIndex] = useState(0);
+
+    const handleClick = (direction) => {
+
+    };
+
   return (
     <Container>
         {/* We are using props to align the left and right arrow of the page */}
-        <Arrow direction="left">
+        <Arrow direction="left" onClick={() => handleClick("left")}>
             <ArrowLeftTwoToneIcon />
         </Arrow>
 
         <Wrapper>
-            <Slide>
+            <Slide bg="f5fafd">
                 <ImageContainer>
-                    <Image src="https://cdn.cliqueinc.com/posts/287935/best-amazon-basics-287935-1593179476091-main.700x0c.jpg" />
+                    <Image src="/photos/photo2.png" />
                     {/* <Image src="https://images.pexels.com/photos/709803/pexels-photo-709803.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /> */}
                 </ImageContainer>
                 
@@ -125,34 +146,32 @@ const Slider = () => {
                 </InfoContainer>
             </Slide>
 
-            <Slide>
+            <Slide bg="fcf1ed">
                 <ImageContainer>
-                    <Image src="https://cdn.cliqueinc.com/posts/287935/best-amazon-basics-287935-1593179476091-main.700x0c.jpg" />
-                    {/* <Image src="https://images.pexels.com/photos/709803/pexels-photo-709803.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /> */}
+                    <Image src="/photos/p5.png" />
                 </ImageContainer>
                 
                 <InfoContainer>
-                    <Title>SUMMER SALE!! </Title>
+                    <Title>WINTER SALE!! </Title>
                     <Description> DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS. </Description>
                     <Button> SHOW MORE </Button>
                 </InfoContainer>
             </Slide>
 
-            <Slide>
+            <Slide bg="dae4f2">
                 <ImageContainer>
-                    <Image src="https://cdn.cliqueinc.com/posts/287935/best-amazon-basics-287935-1593179476091-main.700x0c.jpg" />
-                    {/* <Image src="https://images.pexels.com/photos/709803/pexels-photo-709803.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /> */}
+                    <Image src="https://www.byrdie.com/thmb/3qs3aRnKhAMTLJr7NtJiAfBZdug=/735x0/spring2022trends-831704530c5f49fba41716c0df1d15b0.jpg" />
                 </ImageContainer>
                 
                 <InfoContainer>
-                    <Title>SUMMER SALE!! </Title>
+                    <Title>Trending Fashion </Title>
                     <Description> DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS. </Description>
                     <Button> SHOW MORE </Button>
                 </InfoContainer>
             </Slide>
         </Wrapper>
 
-        <Arrow direction="right">
+        <Arrow direction="right" onClick={() => handleClick("right") }>
             <ArrowRightTwoToneIcon />
         </Arrow>
     </Container>

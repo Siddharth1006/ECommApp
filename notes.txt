@@ -44,3 +44,7 @@ Material UI DOCUMENTATION : https://mui.com/material-ui/getting-started/installa
 --------------------------
 FOR Material UI -> we are using it for the ICONS 
 $ npm install @mui/icons-material
+
+Usedstake hook
+==============
+used for slide index which will slide the background when we click the slider
