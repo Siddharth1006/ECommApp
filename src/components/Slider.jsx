@@ -1,10 +1,13 @@
-import React from 'react'
+import React , { useState } from 'react'
 import styled from 'styled-components'
 
 //For arrows in the slider
 //Can find these in the Material UI website > Material Icons section > search for Arrows
 import ArrowLeftTwoToneIcon from '@mui/icons-material/ArrowLeftTwoTone';
 import ArrowRightTwoToneIcon from '@mui/icons-material/ArrowRightTwoTone';
+
+//For slider
+import {sliderItems} from "../data";
 
 const Container = styled.div`
     width: 100%;
@@ -55,7 +58,10 @@ const Wrapper = styled.div`
     height: 100%;
     display: flex;
 
-    /* transform: translateX(-100vw); */
+    //as you decrease by -100vw we shift to the right side of the flex giving 
+    //us a new image. WE are using this concept and multiplying the constant 1 , 2 etc to -100vw to give
+    // different images as the slider is clicked.
+    transform: translateX(${props => props.slideIndex * (-100)}vw);
 `;
 
 const Slide = styled.div`
@@ -122,7 +128,12 @@ const Slider = () => {
     const [slideIndex , setSlideIndex] = useState(0);
 
     const handleClick = (direction) => {
-
+        if(direction == "left"){
+            setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
+        }
+        else {
+            setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
+        }
     };
 
   return (
@@ -132,43 +143,21 @@ const Slider = () => {
             <ArrowLeftTwoToneIcon />
         </Arrow>
 
-        <Wrapper>
-            <Slide bg="f5fafd">
-                <ImageContainer>
-                    <Image src="/photos/photo2.png" />
-                    {/* <Image src="https://images.pexels.com/photos/709803/pexels-photo-709803.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /> */}
-                </ImageContainer>
-                
-                <InfoContainer>
-                    <Title>SUMMER SALE!! </Title>
-                    <Description> DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS. </Description>
-                    <Button> SHOW MORE </Button>
-                </InfoContainer>
-            </Slide>
-
-            <Slide bg="fcf1ed">
-                <ImageContainer>
-                    <Image src="/photos/p5.png" />
-                </ImageContainer>
-                
-                <InfoContainer>
-                    <Title>WINTER SALE!! </Title>
-                    <Description> DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS. </Description>
-                    <Button> SHOW MORE </Button>
-                </InfoContainer>
-            </Slide>
-
-            <Slide bg="dae4f2">
-                <ImageContainer>
-                    <Image src="https://www.byrdie.com/thmb/3qs3aRnKhAMTLJr7NtJiAfBZdug=/735x0/spring2022trends-831704530c5f49fba41716c0df1d15b0.jpg" />
-                </ImageContainer>
-                
-                <InfoContainer>
-                    <Title>Trending Fashion </Title>
-                    <Description> DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS. </Description>
-                    <Button> SHOW MORE </Button>
-                </InfoContainer>
-            </Slide>
+        <Wrapper slideIndex={slideIndex}>
+            {sliderItems.map(item => (
+                <Slide bg={item.bg}>
+                    <ImageContainer>
+                        <Image src={item.img} />
+                        {/* <Image src="https://images.pexels.com/photos/709803/pexels-photo-709803.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" /> */}
+                    </ImageContainer>
+                    
+                    <InfoContainer>
+                        <Title> {item.title} </Title>
+                        <Description> {item.desc} </Description>
+                        <Button> SHOW MORE </Button>
+                    </InfoContainer>
+                </Slide>
+            ))};
         </Wrapper>
 
         <Arrow direction="right" onClick={() => handleClick("right") }>

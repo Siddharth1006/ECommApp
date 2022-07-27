@@ -47,4 +47,5 @@ $ npm install @mui/icons-material
 
 Usedstake hook
 ==============
-used for slide index which will slide the background when we click the slider
+https://reactjs.org/docs/hooks-state.html 
+used for slide index which will slide the background when we click the slider.
