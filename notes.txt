@@ -53,3 +53,32 @@ used for slide index which will slide the background when we click the slider.
 How to remove background from an image? USE THIS WEBISTE!!
 ========================================================
 https://www.remove.bg/ 
+
+
+
+//=================================================================================================
+
+GIT COMMANDS LEARNT:
+===================
+
+-> To push to staging area : git add . 
+                          git add <path to file>   //adds only that file
+-> To commit the changes : a)  git commit <Enter> 
+                            //opens up in vim. The first line is the message line. The lines below it are description lines.
+                            //Keep message line as short as possible. Discrete and crisp. max usually 50-60 characters
+                            //Then press <Ctrl - C> :wq
+                        b) git commit -m "<Message" -m "<description>"          //command line version
+-> To edit previous commit statement:
+    a) If commit statement was latest - just previous one then u can do this:
+        $ git commit --amend <Enter>
+        //make changes and save the file
+    b) If the commit statement was not the latest then:
+        $ git reabse -i HEAD~n //where n is the nth commit that u wish to changes 
+        //change pick to reword of whichever commit that you wish to change. then save and exit.
+        //now , automatically screen changes to commit message. make edits and save the file and exit
+    
+    After this ALWAYS do , $ git push -f
+
+-> To revert a commit - $ git revert <commit number> <Enter>
+
+NOTE : always stage all files from root directory i.e., when u do "git add ." , it has to be from root directory and not some sub-directory.
