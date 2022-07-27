@@ -9,7 +9,7 @@ const Products = () => {
   return (
         <Container>
             {popularProducts.map((item) => (
-                <EachProduct item={item} />
+                <EachProduct item={item} key={item.id} />
             ))}
         </Container>
   )

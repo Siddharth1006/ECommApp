@@ -53,7 +53,7 @@ export const sliderItems = [
     },
     {
         id: 4,
-        img : "https://i.pinimg.com/736x/70/8a/ab/708aab56e777cb5646d36bab19cc15db.jpg",
+        img : "https://images.bewakoof.com/utter/content/2725/content_Casual_blazers_with_jeans.jpg",
         title: "CASUAL JEANS",
     }
   ];
