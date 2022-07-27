@@ -14,6 +14,8 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
     background-color: #f5fbfd;
+
+    position: relative;
 `;
 
 const Circle = styled.div`
@@ -28,7 +30,16 @@ const Image = styled.img`
      height: 85%;
      z-index: 2;
 `;
-const Info = styled.div``;
+
+//This is for the search icon , favourites icon and Shopping cat icon
+const Info = styled.div`
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: gray;
+    z-index: 3;
+`;
+
 const Icon = styled.div``;
 
 //item is the prop
