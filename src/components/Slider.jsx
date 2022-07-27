@@ -109,6 +109,11 @@ const Description = styled.p`
     font-weight: 500;
     letter-spacing: 1px;
     font-family: 'Helvetica neue' , 'Helvetica' , 'Arial' , 'sans-serif';
+    cursor: pointer;
+
+    .hover_img { position:relative; }
+    .hover_img span { position:absolute; display:none; z-index:99; }
+    .hover_img :hover span { display:block; }
 `;
 
 const Button = styled.button`
@@ -117,7 +122,7 @@ const Button = styled.button`
     background-color: transparent;
 
     :hover {
-        font-weight: 600;
+        font-weight: 800;
         background-color: #d2dcec;
         transition: 0.2s;
     }

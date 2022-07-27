@@ -11,7 +11,7 @@ export const sliderItems = [
       //img : "https://i0.wp.com/dinmaani.com/wp-content/uploads/2020/11/80-New-winter-Looks-That-Can-Be-Worn-By-Anyone-1.jpg",
       img : "http://hbz.h-cdn.co/assets/16/03/980x980/square-1453232748-hbz-turtleneck-00-index.jpg",
       title: "WINTER SALE",
-      desc: "BEST OUTFIT FOR A CHILLY SEASON. GET FLAT 35% OFF ON ALL WINTER CLOTHES",
+      desc: "BEST OUTFIT FOR A CHILLY SEASON. GET FLAT 35% OFF ON ALL WINTER CLOTHES.",
       bg: "fcf1ed",
     },
     {
@@ -51,4 +51,9 @@ export const sliderItems = [
       img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       title: "LIGHT JACKETS",
     },
+    {
+        id: 4,
+        img : "https://i.pinimg.com/736x/70/8a/ab/708aab56e777cb5646d36bab19cc15db.jpg",
+        title: "CASUAL JEANS",
+    }
   ];
