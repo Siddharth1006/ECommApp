@@ -31,6 +31,8 @@ const Image = styled.img`
      z-index: 2;
 `;
 
+
+
 //This is for the search icon , favourites icon and Shopping cat icon
 const Info = styled.div`
     width: 100%;
@@ -45,7 +47,16 @@ const Info = styled.div`
     justify-content: center;
 `;
 
-const Icon = styled.div``;
+const Icon = styled.div`
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    //To center the circles around the icons
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
 
 //item is the prop
 const EachProduct = ({item}) => {
