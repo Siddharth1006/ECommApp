@@ -25,6 +25,8 @@ Then you can use styled components easily.
 
 Why use styled components?
 =========================
+https://styled-components.com/docs/advanced 
+
 1. Its easier to understand and reduces a lot div and classNames making code a lot simpler.
 
 2. Also if we use a component(parent) className that is say "container" and it is fetching a another child component which uses 

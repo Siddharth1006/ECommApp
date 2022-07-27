@@ -26,9 +26,21 @@ const Description = styled.div`
     margin-bottom: 24px;
 `;
 
-const InputContainer = styled.div``;
-const Input = styled.input``;
-const Button = styled.button``;
+const InputContainer = styled.div`
+    width: 50%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+`;
+
+const Input = styled.input`
+
+`;
+
+const Button = styled.button`
+
+`;
 
 const Newsletter = () => {
   return (
