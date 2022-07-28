@@ -119,7 +119,7 @@ const Description = styled.p`
 const Button = styled.button`
     padding: 10px;
     font-size: 20px;
-    background-color: transparent;
+    background-color: #f2e9e9;
 
     :hover {
         font-weight: 800;

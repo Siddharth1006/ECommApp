@@ -21,7 +21,7 @@ export const sliderItems = [
         img: "https://www.bridalguide.com/sites/default/files/Gown-images/dessy_loungewear/TkzWInDA-sized.jpg",
         title: "LOUNGEWEAR LOVE",
         desc: "BE COMFORTABLE FROM THE INSIDE! BE YOU, BE THE POWER!",
-        bg: "f5fafd",
+        bg: "e3ceeb",
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ export const sliderItems = [
       img : "https://images.mygoodtimes.in/wp-content/uploads/2020/02/12070441/Sonam-Kapoor-Bulgari-e1581491097738.jpg",
       title: "TRENDING FASHION",
       desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-      bg: "dae4f2",
+      bg: "f5fafd",
         
     },
   ];

@@ -32,15 +32,37 @@ const SocialIcon = styled.div`
     align-items: center;
     justify-content: center;
     margin-right: 20px;  
+    cursor: pointer;
 `;
 
 
 const Center = styled.div`
     flex: 1;
+    padding: 20px;
+`;
+
+const Title = styled.h3`
+    margin-bottom: 30px;
+`;
+
+//Note : ul has its own margin and padding by default so
+//by setting them to zero, we removed those default settings
+const List = styled.ul`
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+`;
+
+const ListItem = styled.li`
+
 `;
 
 const Right = styled.div`
     flex: 1;
+    padding: 20px;
 `;
 
 
@@ -70,7 +92,22 @@ const Footer = () => {
                     </SocialIcon>
                 </SocialContainer>
             </Left>
-            <Center></Center>
+
+            <Center>
+                <Title> Useful Links </Title>
+                <List>
+                    <ListItem> Home </ListItem>
+                    <ListItem> Cart </ListItem>
+                    <ListItem> Man Fashion </ListItem>
+                    <ListItem> Woman Fashion </ListItem>
+                    <ListItem> Accessories </ListItem>
+                    <ListItem> My Account </ListItem>
+                    <ListItem> Order Tracking </ListItem>
+                    <ListItem> Wishlist </ListItem>
+                    <ListItem> Terms and Conditions </ListItem>
+                </List>
+            </Center>
+            
             <Right></Right>
         </Container>
     )
