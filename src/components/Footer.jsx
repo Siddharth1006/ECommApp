@@ -57,7 +57,7 @@ const List = styled.ul`
 `;
 
 const ListItem = styled.li`
-
+    width: 50%;
 `;
 
 const Right = styled.div`
