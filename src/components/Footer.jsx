@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Facebook, GitHub, Instagram, LinkedIn } from '@mui/icons-material';
+import { Facebook, GitHub, LinkedIn, Twitter } from '@mui/icons-material';
 
 const Container = styled.div`
     display: flex;
@@ -26,7 +26,12 @@ const SocialIcon = styled.div`
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    /* color: white;   */
+    color: white;
+    background-color: #${(props) => props.color};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;  
 `;
 
 
@@ -48,19 +53,19 @@ const Footer = () => {
                     alteration in some form, by injected humor, or radomized words which don't look even slightly believable.
                 </Description>
                 <SocialContainer>
-                    <SocialIcon>
-                        <Facebook />
-                    </SocialIcon >
-                    <SocialIcon>
+                    <SocialIcon color="3B5999">
                         <Facebook />
                     </SocialIcon>
-                    <SocialIcon>
-                        <Instagram />
-                    </SocialIcon>
-                    <SocialIcon>
+
+                    <SocialIcon color="E4405F">
                         <LinkedIn />
                     </SocialIcon>
-                    <SocialIcon>
+                    
+                    <SocialIcon color="55ACEE">
+                        <Twitter />
+                    </SocialIcon>
+
+                    <SocialIcon color="E60023">
                         <GitHub />
                     </SocialIcon>
                 </SocialContainer>
