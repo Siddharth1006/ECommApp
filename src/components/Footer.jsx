@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Facebook, GitHub, LinkedIn, Twitter } from '@mui/icons-material';
+import { Facebook, GitHub, LinkedIn, Twitter, Phone, MailOutline, Room } from '@mui/icons-material';
 
 const Container = styled.div`
     display: flex;
@@ -58,6 +58,7 @@ const List = styled.ul`
 
 const ListItem = styled.li`
     width: 50%;
+    margin-bottom: 10px;
 `;
 
 const Right = styled.div`
@@ -65,6 +66,15 @@ const Right = styled.div`
     padding: 20px;
 `;
 
+const Payment = styled.img`
+    width: 50%;
+`;
+
+const ContactItem = styled.div`
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+`;
 
 const Footer = () => {
     return (
@@ -108,7 +118,22 @@ const Footer = () => {
                 </List>
             </Center>
             
-            <Right></Right>
+            <Right>
+                <Title>Contact</Title>
+                <ContactItem>
+                    <Room style={{marginRight:"10px"}}/> #47 Rajajinagar , Near Forex Mall , Bangalore , Karnataka - 560010
+                </ContactItem>
+                
+                <ContactItem>
+                    <Phone style={{marginRight:"10px"}}/> +91 943583495
+                </ContactItem>
+                
+                <ContactItem>
+                    <MailOutline style={{marginRight:"10px"}} /> contact@aviato.dev
+                </ContactItem>
+                
+                <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
+            </Right>
         </Container>
     )
 }

@@ -50,6 +50,11 @@ const Button = styled.button`
     background-color: teal;
     color:white;
     cursor: pointer;
+    :hover {
+        font-weight: 800;
+        background-color: #a1a7b0;
+        transition: 0.2s;
+    }
 `;
 
 const Newsletter = () => {
