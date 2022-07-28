@@ -5,7 +5,7 @@ import { Send } from '@mui/icons-material'
 import styled from 'styled-components'
 
 const Container = styled.div`
-    height: 58vh;
+    height: 50vh;
     background-color: #fcf5f5;
     
     display: flex;
@@ -21,25 +21,34 @@ const Title = styled.h1`
 `;
 
 const Description = styled.div`
+    font-family: "sohne-var","Helvetica Neue","Arial","sans-serif";
     font-size: 30px;
     font-weight: 300;
     margin-bottom: 24px;
 `;
 
 const InputContainer = styled.div`
-    width: 50%;
+    width: 40%;
     height: 50px;
     background-color: white;
     display: flex;
     justify-content: space-between;
+    border: 1px solid lightgray;
+    margin-bottom: 20px;
 `;
 
 const Input = styled.input`
-
+    border: none;
+    font-size: 20px;
+    flex: 7; // 8 units to the email part
+    padding-left: 20px; // giving some space from the placeholder
 `;
 
 const Button = styled.button`
-
+    flex: 1;// 2 units to the send button
+    border: none;
+    background-color: teal;
+    color:white;
 `;
 
 const Newsletter = () => {
@@ -47,6 +56,10 @@ const Newsletter = () => {
         <Container>
             <Title> Newsletter </Title>
             <Description> Get timely updates from your favourite products! </Description>
+            <InputContainer>
+                <Input placeholder="Your Name" />
+            </InputContainer>
+            
             <InputContainer>
                 <Input placeholder="Your email"/>
                 <Button>
