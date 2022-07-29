@@ -1,18 +1,41 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Container = styled.div``;
-const Wrapper = styled.div``;
-const Form = styled.form``;
-const Input = styled.input``;
-const Agreeement = styled.span``;
-const Button = styled.span``;
+const Container = styled.div`
+    width: 100vw;
+    height: 100vh;
+    background: url("https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center;
+`;
+
+const Wrapper = styled.div`
+    width: 40%;
+    padding: 20px;
+    background-color: white;
+`;
+
+const Title = styled.h1`
+
+`;
+
+const Form = styled.form`
+
+`;
+
+const Input = styled.input`
+
+`;
+
+const Agreement = styled.span``;
+
+const Button = styled.span`
+
+`;
 
 const Register = () => {
   return (
     <Container>
         <Wrapper>
-            <Title></Title>
+            <Title> CREATE YOUR ACCOUNT</Title>
             <Form>
                 <Input placeholder="name" />
                 <Input placeholder="lastname" />
@@ -24,6 +47,7 @@ const Register = () => {
                     By creating this account, I consent to processing of my personal data in accordance with 
                     the <b> PRIVACY POLICY </b>
                 </Agreement>
+                <Button> CREATE </Button>
             </Form>
         </Wrapper>
     </Container>
