@@ -49,6 +49,10 @@ const Button = styled.span`
     background-color: teal;
     color: white;
     cursor: pointer;
+
+    &:hover{
+        background-color: #cee0f1;
+    }
 `;
 
 const Register = () => {
