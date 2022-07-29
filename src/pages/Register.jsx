@@ -21,21 +21,34 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
-
+    font-size: 30px;
+    font-weight: 500;
 `;
 
 const Form = styled.form`
-
+    display: flex;
+    flex-wrap: wrap;
 `;
 
 const Input = styled.input`
-
+    flex: 1;
+    min-width: 40%;
+    margin: 20px 10px 0px 0px;
+    padding: 10px;
 `;
 
-const Agreement = styled.span``;
+const Agreement = styled.span`
+    font-size: 12px;
+    margin: 20px 0px;
+`;
 
 const Button = styled.span`
-
+    width: 40%;
+    border: none;
+    padding: 15px 20px;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
 `;
 
 const Register = () => {
@@ -44,11 +57,11 @@ const Register = () => {
         <Wrapper>
             <Title> CREATE YOUR ACCOUNT</Title>
             <Form>
-                <Input placeholder="name" />
-                <Input placeholder="lastname" />
+                <Input placeholder="Name" />
+                <Input placeholder="Lastname" />
                 <Input placeholder="username" />
                 <Input placeholder="email" />
-                <Input placeholder="password" />
+                <Input placeholder="Password" />
                 <Input placeholder="Confirm Password" />
                 <Agreement>
                     By creating this account, I consent to processing of my personal data in accordance with 
