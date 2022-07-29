@@ -4,10 +4,15 @@ import SearchIcon from '@mui/icons-material/Search';
 import Badge from '@mui/material/Badge';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
+//For Mobile view
+import { mobile } from "../Responsive";
+
 //We are creating our own style components and WILL NOT BE USING CSS
 const Container = styled.div`
   height: 85px;
   // Change this value to see the Container component's thickness vary
+
+  /* ${mobile({ backgroundColor: "red" })} */
 `;
 
 const Wrapper = styled.div`
